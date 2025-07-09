@@ -27,3 +27,12 @@
   font-family: Arial, sans-serfi;
   color: gray;
 }
+
+.button2 {
+  background-color: rgb(1, 59, 57);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
