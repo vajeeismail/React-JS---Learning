@@ -1,67 +1,28 @@
-.card {
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px gray;
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  max-width: 250px;
-  display: inline-block;
-}
-
-.card-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+.list-category {
+  font-size: 24px;
+  color: #04a39a;
+  font-weight: bold;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
 }
 
-.card-title {
-  font-family: Arial, sans-serfi;
+.list-item {
+  list-style: decimal inside;
+  padding-left: 0;
   margin: 0;
-  color: #a19191;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card-text {
-  font-family: Arial, sans-serfi;
-  color: gray;
+.list-item li {
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.button2 {
-  background-color: rgb(1, 59, 57);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.list-item li:hover {
+  background-color: #e0f7f6;
   cursor: pointer;
-}
-
-.student {
-  font-family: Arial, sans-serfi;
-  font-size: 2rem;
-  padding: 10px;
-  border: 1px solid rgb(0, 11, 11);
-}
-
-.student p {
-  margin: 0;
-}
-
-.welcome-message {
-  font-family: Arial, sans-serfi;
-  font-size: 2.5rem;
-  padding: 10px;
-  color: white;
-  background-color: rgb(3, 189, 28);
-  border-radius: 5px;
-}
-
-.login-propmt {
-  font-family: Arial, sans-serfi;
-  font-size: 2.5rem;
-  padding: 10px;
-  color: white;
-  background-color: rgb(189, 3, 3);
-  border-radius: 5px;
 }

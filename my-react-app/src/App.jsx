@@ -1,46 +1,27 @@
-// 01. Introduction
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Food from './Food.jsx'
-
-// 02. Create Card
-import Card from "./Card";
-
-// 03. React js how to add CSS styles 
-import Button from './Button/Button.jsx'
-
-// 04. PROPS - Student
-// import Student from "./Student.jsx";
-
-// 05. Condtional Rendering
-import UserGreeting from './UserGreeting.jsx';
-
 //06. Render List
 import List from './List.jsx';
 
 function App() {
+
+  const fruits = [{id: 1, name:"apple", calories: 105},
+                  {id: 2, name:"orange", calories: 90},
+                  {id: 3, name:"banana", calories: 110},
+                  {id: 4, name:"watermelon", calories: 150}];
+
+  const milkShake =[{id: 1, name:"apple milk shake", calories: 155},
+                    {id: 2, name:"orange milk shake", calories: 140},
+                    {id: 3, name:"banana milk shake", calories: 160},
+                    {id: 4, name:"watermelon milk shake", calories: 200}];
+
   return (
     <>
-      {/* <Header/>
-      <Food/>
-      <Footer/> */}
+      <List items={fruits} category="Fruits"/>
+      <List items={milkShake} category="Milk Shakes"/>
 
-      {/* <Card />
-      <Card /> */}
-
-      {/* <Button /> */}
-
-      {/* <Student name="Vajee" age={25} isStudent={true}/>
-      <Student name="Saakeer" age={24} isStudent={true}/>
-      <Student name="Mufees Kizhavan" age={45} isStudent={false}/>
-      <Student /> */}
-
-      {/* <UserGreeting isLoggedIn={true} />
-
-      <UserGreeting isLoggedIn={true} username="Vajee" />
-      <UserGreeting isLoggedIn={false} username="Saaker" /> */}
-
-      <List />
+      <br /><br />
+      <p>Using JavaScript <b>lenght</b> Property Methods</p>
+      {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
+      {milkShake.length > 0 ? <List items={milkShake} category="Milk Shakes"/> : null}
     </>
   );
 }
