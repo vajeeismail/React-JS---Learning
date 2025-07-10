@@ -15,6 +15,9 @@ import Button from './Button/Button.jsx'
 // 05. Condtional Rendering
 import UserGreeting from './UserGreeting.jsx';
 
+//06. Render List
+import List from './List.jsx';
+
 function App() {
   return (
     <>
@@ -32,10 +35,12 @@ function App() {
       <Student name="Mufees Kizhavan" age={45} isStudent={false}/>
       <Student /> */}
 
-      <UserGreeting isLoggedIn={true} />
+      {/* <UserGreeting isLoggedIn={true} />
 
       <UserGreeting isLoggedIn={true} username="Vajee" />
-      <UserGreeting isLoggedIn={false} username="Saaker" />
+      <UserGreeting isLoggedIn={false} username="Saaker" /> */}
+
+      <List />
     </>
   );
 }
