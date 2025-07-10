@@ -10,9 +10,10 @@ import Card from "./Card";
 import Button from './Button/Button.jsx'
 
 // 04. PROPS - Student
-import Student from "./Student.jsx";
+// import Student from "./Student.jsx";
 
 // 05. Condtional Rendering
+import UserGreeting from './UserGreeting.jsx';
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
       <Student name="Mufees Kizhavan" age={45} isStudent={false}/>
       <Student /> */}
 
+      <UserGreeting isLoggedIn={true} />
 
+      <UserGreeting isLoggedIn={true} username="Vajee" />
+      <UserGreeting isLoggedIn={false} username="Saaker" />
     </>
   );
 }
