@@ -36,3 +36,14 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.student {
+  font-family: Arial, sans-serfi;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid rgb(0, 11, 11);
+}
+
+.student p {
+  margin: 0;
+}
