@@ -1,13 +1,11 @@
-//07. Click Event
-import Button from './Button.jsx'
-import ProfilePicture from './ProfilePicture.jsx';
+//08. Hook -useState(): hook introduction
+import MyComponent from "./MyComponent";
 
 function App() {
 
   return (
     <>
-      <Button />
-      <ProfilePicture />
+      <MyComponent />
     </>
   );
 }
