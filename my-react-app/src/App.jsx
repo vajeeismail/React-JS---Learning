@@ -1,15 +1,13 @@
-//08. Hook -useState(): hook introduction
+//08. onChange Event Handler - for handle form elements
+
 import MyComponent from "./MyComponent";
-import Counter from "./Counter";
+
 
 function App() {
 
   return (
     <>
-      {/* Uncomment for see MyComponent */}
-      {/* <MyComponent /> */}
-
-      <Counter />
+      <MyComponent />
     </>
   );
 }
