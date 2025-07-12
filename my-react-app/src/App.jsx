@@ -1,11 +1,11 @@
-//10. Color Change App
-import ColorPicker from "./ColorPicker.jsx";
+//11. Update Function
+import MyComponent from "./MyComponent";
 
 function App() {
 
   return (
     <>
-      <ColorPicker />
+      <MyComponent />
     </>
   );
 }
