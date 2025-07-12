@@ -1,4 +1,4 @@
-//11. Update Function
+//12. Update OBJECT in State
 import MyComponent from "./MyComponent";
 
 function App() {
