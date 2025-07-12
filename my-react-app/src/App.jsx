@@ -1,13 +1,11 @@
-//08. onChange Event Handler - for handle form elements
-
-import MyComponent from "./MyComponent";
-
+//10. Color Change App
+import ColorPicker from "./ColorPicker.jsx";
 
 function App() {
 
   return (
     <>
-      <MyComponent />
+      <ColorPicker />
     </>
   );
 }
