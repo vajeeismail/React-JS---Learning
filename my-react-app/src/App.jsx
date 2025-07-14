@@ -1,11 +1,11 @@
 //14. Update ARRAYS of OBJECT in State
-import MyComponent from "./MyComponent";
+import ToDoList from "./ToDoList";
 
 function App() {
 
   return (
     <>
-      <MyComponent />
+      <ToDoList />
     </>
   );
 }
