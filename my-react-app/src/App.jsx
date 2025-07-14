@@ -1,4 +1,4 @@
-//13. Update ARRAYS in State
+//14. Update ARRAYS of OBJECT in State
 import MyComponent from "./MyComponent";
 
 function App() {
