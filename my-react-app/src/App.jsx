@@ -1,12 +1,12 @@
-//19. useRef()
+//20. Stop Watch
 
-import MyComponent from "./MyComponent";
+import StopWatch from "./StopWatch";
 
 function App() {
 
   return (
     <>
-      <MyComponent />
+      <StopWatch />
     </>
   );
 }
