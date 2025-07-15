@@ -1,11 +1,11 @@
-//14. Update ARRAYS of OBJECT in State
-import ToDoList from "./ToDoList";
+//16. useEffect()
+import MyComponent from "./MyComponent";
 
 function App() {
 
   return (
     <>
-      <ToDoList />
+      <MyComponent />
     </>
   );
 }
