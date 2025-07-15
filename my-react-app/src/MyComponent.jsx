@@ -7,50 +7,42 @@ import React, {useState, useEffect} from "react";
 
 
 function MyComponent () {
-
-    const [count, setCount] = useState(0);
-    const [color, setColor] = useState("green");
-
-    // 1. useEffect (() => {})  // Runs after every re-render
-    useEffect(() => {
-        document.title = `Count: ${count}`
-    }); // See the title of this document
-
-
-    // 2. useEffect (() => {}, [])  // Runs only on mount
-    useEffect(() => {
-        document.title = `My Counter Program`
-    }, []); // See the title of this document
-
     
-    // 3. useEffect (() => {}, [value])  // Runs on mount + when value changes
-    useEffect(() => {
-        document.title = `Count: ${count} ${color}`
-    }, [count]); // See the title of this document
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
-    useEffect(() => {
-        document.title = `Count: ${count} ${color}`
-    }, [count, color]); // See the title of this document
+    window.addEventListener ("resize", handleResize); 
+    console.log("ADDED EVENT LISTENER");
+    // Without use effect - 
+    // addEventListener work every adjustment - this is not good - so btter is useEffect
 
+    // Resize displa
+    useEffect (() => {
+        window.addEventListener ("resize", handleResize);
+        console.log("ADDED EVENT LISTENER");
 
-    function addCount() {
-        setCount(c => c + 1);
-    }
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            console.log("REMOVED EVENT LISTENER");
+            // Clean Up - a banefit
+        }
+    }, [])
 
-    function subCount () {
-        setCount(c => c - 1);   
-    }
+    // Resize title dispaly
+    useEffect (() => {
+        document.title = `Size: ${width} x ${height}`;
+    }, [width, height])
 
-    function handleColor () {
-        setColor(c => c === "green" ? "red" : "green");
+    function handleResize() {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
     }
     
+
     return (
         <>
-            <p style={{color: color}} >count: {count}</p>
-            <button onClick={addCount}>Add</button>
-            <button onClick={subCount}>Subtract</button> <br />
-            <button onClick={handleColor}>Change Color</button>
+            <p onChange={handleResize}>Width of Window: {width}</p>
+            <p onChange={handleResize}>Height of Window: {height}</p>
         </>
     );
 }
