@@ -1,14 +1,12 @@
-//18. useContext() - React Hook allowas yout o share values
-                    // between multiple levels of components
-                    // without passing props through each level
+//19. useRef()
 
-import ComponentA from "./ComponentA";
+import MyComponent from "./MyComponent";
 
 function App() {
 
   return (
     <>
-      <ComponentA />
+      <MyComponent />
     </>
   );
 }
