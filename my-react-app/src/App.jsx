@@ -1,11 +1,14 @@
-//17. Digital Clock using useEffect()
-import DigitalClock from "./DigitalClock";
+//18. useContext() - React Hook allowas yout o share values
+                    // between multiple levels of components
+                    // without passing props through each level
+
+import ComponentA from "./ComponentA";
 
 function App() {
 
   return (
     <>
-      <DigitalClock />
+      <ComponentA />
     </>
   );
 }

@@ -1,34 +1,4 @@
-body {
-  background-image: url("./assets/clockbg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.clock-container {
-  backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 40px 60px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  text-align: center;
-}
-
-.clock {
-  font-size: 6rem;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: "Courier New", Courier, monospace;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  letter-spacing: 3p;
+.box {
+  border: 3px solid;
+  padding: 40px;
 }
